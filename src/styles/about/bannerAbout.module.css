@@ -1,0 +1,25 @@
+.banner__content {
+  @apply min-h-screen bg-[#D9D9D9] flex flex-col lg:flex-row items-center justify-between lg:px-16;
+}
+
+.bannerText__content {
+  @apply  flex items-center flex-col;
+}
+
+.bannerText__content p:nth-child(1) {
+  @apply ps-32 text-xl font-light self-start;
+}
+.bannerText__content p:nth-child(2) {
+  @apply text-9xl font-bold text-[#A3A1A1] tracking-tighter;
+}
+
+.bannerText__content p:nth-child(3) {
+  @apply text-9xl font-bold text-center  tracking-tighter;
+}
+.bannerText__content p:nth-child(4) {
+  @apply font-light text-xl text-end self-end pe-16;
+}
+
+.bannerText__content button {
+  @apply px-10 py-2 border border-black rounded-md  mt-32 hover:bg-black transition-all duration-200 hover:text-white;
+}

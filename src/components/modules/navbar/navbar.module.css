@@ -1,0 +1,143 @@
+.navbar {
+  @apply fixed z-50  left-0 right-0 px-10 xs:px-20  transition-all duration-200;
+}
+.navbar__content {
+  @apply flex relative  items-center justify-between;
+}
+
+.menu {
+  @apply hidden lg:inline-block m-auto justify-self-center;
+}
+
+.menu__content {
+  @apply flex  relative child:mx-8 child:flex child:items-center child:justify-center;
+}
+
+.arrowIcon {
+  @apply text-xs mx-1;
+}
+.menu__items {
+  @apply cursor-pointer;
+}
+.menu__items span,
+.menu__items > .arrowIcon {
+  @apply text-white;
+}
+.menu__subroutes {
+  @apply hidden child:grid child:grid-cols-1 grid-rows-1  absolute p-3  top-full bg-[#181717];
+}
+.menu__subroutes li {
+  @apply p-1 text-sm my-2 hover:scale-105 transition-all duration-200 hover:text-gray-300  relative  hover:shadow-2xl;
+}
+.subRoutesIcon{
+  @apply ms-2 
+}
+.menu__subroutes li:hover .subRoutesIcon{
+  @apply  scale-125 transition-all duration-200 
+}
+.menu__items:hover .menu__subroutes {
+  @apply flex;
+}
+.menu__items:hover .arrowIcon,
+.navCollaps__item:hover .arrowIcon {
+  @apply rotate-90 transition  duration-200;
+}
+
+.menu__items:hover::after {
+  content: "";
+  animation: menuItem 0.5s ease;
+  /* @apply absolute top-full left-0 right-0 h-0.5 rounded-full bg-white; */
+}
+
+.menu__2Subroute_content {
+  @apply hidden absolute bg-[#181717] left-full top-0  min-w-72 ps-4 transition
+}
+.menu__2Subroute_content ul{
+  @apply w-fit child:text-white
+}
+
+.menu__subroutes li:hover .menu__2Subroute_content{
+ @apply block 
+}
+
+
+
+
+
+
+
+
+/* ----collaps ---------- */
+
+.navbar__collaps {
+  animation: menu-collaps 0.5s;
+  @apply z-50 lg:hidden mt-5 absolute top-full left-0 right-0 overflow-hidden border-t-2 bg-white border-t-orange-500;
+}
+
+.navCollaps__content {
+  @apply child:border-b overflow-auto child:py-1 child:text-sm  p-5 child:mt-2;
+}
+.navCollaps__item:hover {
+  @apply cursor-pointer;
+}
+
+.navCollaps__subroutes {
+  display: grid;
+  grid-template-rows: 0fr !important;
+  transition: grid-template-rows 500ms;
+}
+
+.navCollaps__subroutes_content {
+  @apply overflow-hidden   child:relative   ps-5 child:my-1 hover:child:text-blue-600 child:list-disc;
+}
+.navCollaps__item:hover .navCollaps__subroutes {
+  grid-template-rows: 1fr !important;
+  @apply py-2;
+}
+.navCollaps__subroutes_content:hover {
+ @apply overflow-visible
+}
+.navCollaps__subroutes_content li ul {
+  @apply  child:my-1 child:list-disc  hover:child:text-blue-500 hover:child:cursor-pointer child:text-black;
+}
+
+.navCollaps__subroutes_content li div {
+  display: grid;
+  grid-template-rows: 0fr !important;
+  transition:grid-template-rows 500ms ;
+  @apply hidden peer-checked:block absolute left-36  top-0 z-20 bg-gray-200 px-5 my-2 text-black p-3;
+}
+.navCollaps__subroutes_content li:hover div {
+ @apply  sm:grid  grid-rows-1 overflow-hidden
+}
+.checkInput{
+  display: none;
+}
+.checkInput + label + div{
+  @apply hidden;
+}
+
+.checkInput:checked + label + div{
+  display: grid !important;
+  grid-template-rows: 1fr;
+  transition:grid-template-rows 500ms;
+}
+/* ___________________ */
+
+@keyframes menu-collaps {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 225px;
+  }
+}
+
+@keyframes menuItem {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0;
+  }
+}

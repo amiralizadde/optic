@@ -1,0 +1,18 @@
+.banner__content {
+ 
+}
+.textBanner__content {
+  @apply child:lg:my-4 child:my-2 p-3 xs:child:my-2 absolute text-white md:ps-28 lg:p-48 border-2 top-0 bottom-0 left-0 right-0  z-20 flex items-center md:items-start justify-center flex-col;
+}
+
+.banner__btn{
+    @apply w-28 py-2 px-5 mt-5 text-sm flex items-center justify-center bg-primary
+}
+
+.banner__btn:hover{
+    @apply scale-105 bg-black transition duration-500
+}
+
+.textBanner__desc{
+  @apply  text-sm text-center xs:w-2/3 xs:text-justify md:w-2/3 xl:w-2/4
+}

@@ -1,0 +1,71 @@
+.topPromote{
+    @apply my-10
+}
+.topPromote__textContent{
+    @apply flex flex-col items-center justify-center py-12 child:my-2
+}
+
+.topPromote__textContent  p:first-child{
+    @apply text-2xl text-primary
+}
+.topPromote__textContent  p:last-child{
+    @apply text-xl 
+}
+
+.topPromote__boxes{
+    @apply grid grid-cols-1 gap-10 child:rounded lg:grid-cols-3 px-5 lg:px-16 child:text-center text-white  child:px-3 child:py-5
+}
+
+.topPromote__box{
+    @apply py-8 text-xs xs:text-sm font-bold tracking-wider shadow-promote
+}
+
+.topPromote__boxes div:first-child{
+    @apply bg-cyan-800
+}
+.topPromote__boxes div:nth-child(even){
+    @apply bg-sky-700
+}
+.topPromote__boxes div:last-child{
+    @apply bg-blue-500
+}
+
+.topPromote__box p:last-child{
+    @apply mt-7 leading-7 sm:leading-10 
+}
+
+/* _________middle _____________________ */
+
+.midPromote{
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-10 p-5 container  mt-20 
+}
+.midPromote div:first-child{
+@apply flex items-center justify-center
+}
+.midPromote__aboutCompany{
+    @apply px-3 md:p-10  mt-5
+}
+.midPromote__aboutCompany p:first-child{
+    @apply text-primary text-xl text-center font-bold
+}
+.midPromote__aboutCompany p:last-child{
+    @apply text-xs tracking-wider sm:text-sm mt-3 leading-7  sm:leading-10
+}
+
+/* _________latest________________ */
+
+.latestPromote{
+    @apply grid  grid-cols-1 lg:grid-cols-2 gap-10 p-5 container mt-20 
+}
+.latestPromote div:last-child{
+@apply flex items-center justify-center
+}
+.latestPromote__aboutCompany{
+    @apply px-3 md:p-10  mt-5 order-last lg:order-first
+}
+.latestPromote__aboutCompany p:first-child{
+    @apply text-primary text-xl text-center font-bold
+}
+.latestPromote__aboutCompany p:last-child{
+    @apply text-xs tracking-wider sm:text-sm mt-3 leading-7  sm:leading-10
+}

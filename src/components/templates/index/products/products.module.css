@@ -1,0 +1,17 @@
+.products__content{
+    @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3
+}
+
+.products__content li{
+ @apply  flex flex-col items-center justify-center 
+} 
+.products__content li p{
+    @apply text-sm font-bold text-black/75
+   } 
+.products__Img{
+    @apply w-auto h-[200px] object-cover  p-5
+}
+
+.product__title{
+    @apply text-2xl my-10 text-center font-medium underline underline-offset-8
+}

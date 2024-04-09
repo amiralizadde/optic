@@ -1,0 +1,17 @@
+.footer__content{
+    @apply grid grid-cols-1 lg:grid-cols-3   px-8 py-16  child:leading-8 child:p-5  bg-gradient-to-l from-indigo-400
+}
+
+.footer__content div:first-child{
+    @apply py-5
+}
+
+.contact__content p{
+    @apply flex items-center
+}
+.contact__content p span{
+    @apply ms-2
+}
+.socialApp__content{
+    @apply flex items-center child:me-4 mt-4 child:text-2xl child:cursor-pointer hover:child:scale-125 child:transition child:duration-200
+}

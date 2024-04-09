@@ -1,0 +1,11 @@
+.inputelem{
+    /* display: none; */
+}
+.divElem{
+    display: none;
+}
+
+input:checked + label + .divElem{
+ display: block;
+ background-color: blue;
+}

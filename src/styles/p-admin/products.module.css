@@ -1,0 +1,21 @@
+.createProductsForm{
+    @apply border p-10 child:my-5 child:flex child:flex-col child:items-start
+} 
+.titleProduct__content{
+    @apply flex flex-col items-start
+}
+.createProductsForm input{
+    @apply border border-black w-1/2 py-1 px-3  placeholder:text-sm rounded-lg
+}
+.descriptionProduct{
+    @apply border
+}
+.createProductsForm label{
+    @apply text-sm
+}
+.createProductsForm input + div{
+@apply text-sm text-red-600
+}
+.createProductsForm button{
+@apply border bg-gray-400 px-10 py-3 text-white
+}

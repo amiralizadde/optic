@@ -1,0 +1,21 @@
+.createProductsForm{
+    @apply  p-10 bg-gray-900 child:my-5 child:flex child:flex-col child:items-start;
+} 
+.titleProduct__content{
+    @apply flex flex-col items-start
+}
+.createProductsForm input{
+    @apply w-full rounded-none py-2 px-3  placeholder:text-sm 
+}
+.descriptionProduct{
+    @apply border
+}
+.createProductsForm label{
+    @apply text-sm text-white
+}
+.createProductsForm input + div{
+@apply text-sm text-red-600
+}
+.createProductsForm button{
+@apply  bg-white/75 hover:bg-black transition-all duration-200 hover:text-white px-10 py-3  w-full text-center flex items-center justify-center; 
+}

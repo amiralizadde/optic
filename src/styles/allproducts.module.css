@@ -1,0 +1,18 @@
+.banner__allProducts{
+    @apply w-full h-96  bg-gradient-to-b from-blue-500  flex items-center justify-center 
+}
+
+.allproducts__content{
+    @apply  gap-5  py-5   grid grid-rows-2 grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 sm:px-10
+}
+.allproducts__content li{
+ @apply px-3 shadow-xl hover:scale-105 cursor-pointer transition-all duration-100
+}
+
+.img__products{
+    @apply w-full max-w-72 min-h-64 object-contain;
+}
+
+.allproducts__content li p{
+@apply  text-center py-2 text-sm font-medium
+}
