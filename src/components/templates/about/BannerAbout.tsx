@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../../../styles/about/bannerAbout.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const BannerAbout = () => {
 
@@ -15,7 +16,7 @@ const BannerAbout = () => {
           <p>CREATIVE</p>
           <p>AGENCY</p>
           <p>Have an <span className='font-bold'>idea</span> or <span className='font-bold mx-1'>Project</span>? </p>
-          <button> Contact Us </button>
+          <Link href='/contact'><button> Contact Us</button> </Link>
         </div>
 
 

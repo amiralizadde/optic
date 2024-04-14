@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 
@@ -30,26 +31,28 @@ const NavbarSubroutes: React.FC<NavbarSubroutesTypes> = ({
 
   return (
     <>
-    
-        <p
-          onClick={() => setIsShowSubRoute(!isShowSubRoute)}
-          className="flex items-center"
-        >
-          <span>{title}</span>
-          {subset && (
-            <MdArrowForwardIos
-              className={`transition-all duration-200 mx-2 text-sm ${
-                isShowSubRoute ? "rotate-90" : "rotate-0"
-              }`}
-            />
-          )}
-        </p>
-        <ul className="overflow-auto bg-lime-200 child:py-2 child:list-disc 2xs:ps-7">
-        {isShowSubRoute &&
-          subset?.map((subroute) => (
-            <li className="">{subroute.name}</li>
+      <p
+        onClick={() => setIsShowSubRoute(!isShowSubRoute)}
+        className="flex items-center"
+      >
+        <span>{title}</span>
+        {subset && (
+          <MdArrowForwardIos
+            className={`transition-all duration-200 mx-2 text-sm ${
+              isShowSubRoute ? "rotate-90" : "rotate-0"
+            }`}
+          />
+        )}
+      </p>
+      {isShowSubRoute && (
+        <div className="overflow-auto child:py-2 my-2 bg-lime-200  2xs:ps-5">
+          {subset?.map((subroute) => (
+            <div className="ps-2 xs:list-disc">
+              <Link href="/allProducts">{subroute.name}</Link>
+            </div>
           ))}
-      </ul>
+        </div>
+      )}
     </>
   );
 };

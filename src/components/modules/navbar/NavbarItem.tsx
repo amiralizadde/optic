@@ -36,7 +36,7 @@ const NavbarItem: React.FC<menuItemsProps> = (menuItem) => {
         {menuItem.category &&  <MdArrowForwardIos className={`transition-all duration-200 mx-2 text-sm ${isShowSubsetMenu ? 'rotate-90' : 'rotate-0'}`}/> }
       </p>
       {isShowSubsetMenu && (
-        <ul className="bg-lime-100  py-3 child:my-1  child:py-1 child:text-sm">
+        <ul className="bg-lime-100  child:my-1  child:py-1 child:text-sm">
           {menuItem.category?.map((item) => (
             <li className="ms-5">
               <NavbarSubroutes key={item.id} {...item} />

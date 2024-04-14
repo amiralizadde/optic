@@ -70,7 +70,7 @@
 /* ----collaps ---------- */
 
 .navbarCollaps{
-  animation:menu-collaps ease 1.5s ;
+  animation:menu-collaps ease 0.5s ;
   @apply absolute left-0 right-0 top-full mt-5 bg-white overflow-hidden;
 }
 

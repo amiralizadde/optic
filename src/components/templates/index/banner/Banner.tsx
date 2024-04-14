@@ -23,10 +23,10 @@ const Banner = () => {
           natus voluptatem autem dolorum iure, laborum eius a veniam,
           repudiandae error! Totam!
         </p>
-        <button className={styles.banner__btn}>
-          <Link href='/about'><span> more </span></Link>
+        <Link href='/about' className={styles.banner__btn}>
+          <span> more </span>
           <IoIosArrowRoundForward className="text-xl mx-2" />
-        </button>
+        </Link>
       </div>
     </div>
   );

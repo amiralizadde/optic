@@ -2,7 +2,7 @@
  
 }
 .textBanner__content {
-  @apply child:lg:my-4 child:my-2 p-3 xs:child:my-2 absolute text-white md:ps-28 lg:p-48 border-2 top-0 bottom-0 left-0 right-0  z-20 flex items-center md:items-start justify-center flex-col;
+  @apply child:lg:my-4 child:my-2 p-3 xs:child:my-2 absolute text-white md:ps-28 lg:p-48 top-0 bottom-0 left-0 right-0  z-20 flex items-center md:items-start justify-center flex-col;
 }
 
 .banner__btn{
