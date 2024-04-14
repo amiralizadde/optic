@@ -24,7 +24,7 @@
   @apply text-white;
 }
 .menu__subroutes {
-  @apply hidden child:grid child:grid-cols-1 grid-rows-1  absolute p-3  top-full bg-[#181717];
+  @apply hidden child:grid child:grid-cols-1 grid-rows-1  absolute p-3 pt-4  top-full bg-[#021B00];
 }
 .menu__subroutes li {
   @apply p-1 text-sm my-2 hover:scale-105 transition-all duration-200 hover:text-gray-300  relative  hover:shadow-2xl;
@@ -50,7 +50,7 @@
 }
 
 .menu__2Subroute_content {
-  @apply hidden absolute bg-[#181717] left-full top-0  min-w-72 ps-4 transition
+  @apply hidden absolute bg-[#021B00] left-full top-0  min-w-72 ps-4 transition
 }
 .menu__2Subroute_content ul{
   @apply w-fit child:text-white
@@ -69,59 +69,36 @@
 
 /* ----collaps ---------- */
 
-.navbar__collaps {
-  animation: menu-collaps 0.5s;
-  @apply z-50 lg:hidden mt-5 absolute top-full left-0 right-0 overflow-hidden border-t-2 bg-white border-t-orange-500;
+.navbarCollaps{
+  animation:menu-collaps ease 1.5s ;
+  @apply absolute left-0 right-0 top-full mt-5 bg-white overflow-hidden;
 }
 
-.navCollaps__content {
-  @apply child:border-b overflow-auto child:py-1 child:text-sm  p-5 child:mt-2;
-}
-.navCollaps__item:hover {
-  @apply cursor-pointer;
+.navbarCollaps__content{
+  @apply child:py-1 border-t-2 child:cursor-pointer ps-2 border-t-orange-500 child:font-medium child:text-sm child:my-2;
 }
 
-.navCollaps__subroutes {
-  display: grid;
-  grid-template-rows: 0fr !important;
-  transition: grid-template-rows 500ms;
+.navbarCollaps__product{
+  @apply hover:text-blue-800 hover:font-bold
 }
 
-.navCollaps__subroutes_content {
-  @apply overflow-hidden   child:relative   ps-5 child:my-1 hover:child:text-blue-600 child:list-disc;
-}
-.navCollaps__item:hover .navCollaps__subroutes {
-  grid-template-rows: 1fr !important;
-  @apply py-2;
-}
-.navCollaps__subroutes_content:hover {
- @apply overflow-visible
-}
-.navCollaps__subroutes_content li ul {
-  @apply  child:my-1 child:list-disc  hover:child:text-blue-500 hover:child:cursor-pointer child:text-black;
+.navbarCollaps__categoryContent{
+  @apply hidden border border-black ps-5
 }
 
-.navCollaps__subroutes_content li div {
-  display: grid;
-  grid-template-rows: 0fr !important;
-  transition:grid-template-rows 500ms ;
-  @apply hidden peer-checked:block absolute left-36  top-0 z-20 bg-gray-200 px-5 my-2 text-black p-3;
-}
-.navCollaps__subroutes_content li:hover div {
- @apply  sm:grid  grid-rows-1 overflow-hidden
-}
-.checkInput{
-  display: none;
-}
-.checkInput + label + div{
-  @apply hidden;
+.navbarCollaps__product:hover .navbarCollaps__categoryContent{
+  @apply block
 }
 
-.checkInput:checked + label + div{
-  display: grid !important;
-  grid-template-rows: 1fr;
-  transition:grid-template-rows 500ms;
+.navbarCollaps__subsetContent{
+  
 }
+
+
+
+
+
+
 /* ___________________ */
 
 @keyframes menu-collaps {

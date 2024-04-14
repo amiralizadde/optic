@@ -11,11 +11,12 @@ module.exports = {
     },
     extend: {
       colors:{
-        primary:"#004A8E",
+        primary:"#3f6212",
       },
       fontFamily: {
       },
       screens: {
+        '2xs':"350px",
         'xs':'450px',
         'sm': '640px',
         'md': '768px',

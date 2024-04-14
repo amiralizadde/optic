@@ -2,7 +2,7 @@
     @apply my-10
 }
 .topPromote__textContent{
-    @apply flex flex-col items-center justify-center py-12 child:my-2
+    @apply flex flex-col items-center justify-center py-12 child:my-2 px-5;
 }
 
 .topPromote__textContent  p:first-child{
@@ -13,11 +13,11 @@
 }
 
 .topPromote__boxes{
-    @apply grid grid-cols-1 gap-10 child:rounded lg:grid-cols-3 px-5 lg:px-16 child:text-center text-white  child:px-3 child:py-5
+    @apply grid grid-cols-1 gap-10 xs:px-20 md:px-40  child:rounded lg:grid-cols-3 px-5 lg:px-16 child:text-center text-white  child:px-3 child:py-5
 }
 
 .topPromote__box{
-    @apply py-8 text-xs xs:text-sm font-bold tracking-wider shadow-promote
+    @apply py-8 text-xs xs:text-sm font-medium tracking-wider shadow-promote
 }
 
 .topPromote__boxes div:first-child{

@@ -36,6 +36,9 @@ const Products = () => {
                 <p> name product </p>
                 </li>
             </ul>
+            <div className='flex items-center justify-center mt-16'>
+                <button className='bg-lime-950 text-white px-10 py-2 hover:bg-black  transition-all duration-20'> See all </button>
+            </div>
         </div>
 
     </div>

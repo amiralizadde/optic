@@ -15,7 +15,7 @@ const Promote = () => {
         </div>
         <div className={styles.topPromote__boxes}>
           <div className={styles.topPromote__box}>
-            <p> The latest technology in the world </p>
+            <p > The latest technology in the world </p>
             <p>
               Simplification of processes, improvement and optimal management of
               new management solutions
