@@ -5,7 +5,7 @@ const Users = () => {
   return (
     <div>
       <div className="min-h-96 flex items-center justify-center">
-        <div className="flex items-center justify-center child:mx-5 child:overflow-hidden  ">
+        <div className="flex flex-col lg:flex-row items-center justify-center child:mx-5 child:overflow-hidden  ">
           <div className="child:rounded-full">
             <Image
               src="/assets/manager.jpg"

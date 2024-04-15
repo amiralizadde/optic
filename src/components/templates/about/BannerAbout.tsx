@@ -21,8 +21,8 @@ const BannerAbout = () => {
 
 
         {/* image banner content */}
-        <div>
-          <Image src='/assets/kindpng_1019906 2.png' width={1000} height={500} alt='image banner about'/>
+        <div className='hidden lg:block h-full w-full  '>
+          <Image src='/assets/deputy.png' width={1000} height={500} className={styles.banner__img} alt='image banner about'/>
         </div>
        </div>
 
